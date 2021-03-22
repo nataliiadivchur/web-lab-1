@@ -5,10 +5,230 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ShapeRex</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
     <script src="js/app.min.js"></script>
+    <!-- for calendar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
-    <div style="color: indigo;font-family: 'Lucida Calligraphy';font-size: xx-large;text-align: center">Hello</div>
+    <div class="wrapper">
+        <nav id="sideBar">
+            <div class="sidebar-header">
+                    <img src="img/logo.png" alt="logo">
+                    <div class="logo-text">ShapeRex</div>
+                </div>
+            <ul class="list-unstyled components">
+                    <li class="active"><div type="button"><img src="img/dashboard.png " alt=dashboard">Dashboard</div></li>
+                    <li><div type="button"><img src="img/my-task.png" alt="my-task">My Task</div> </li>
+                    <li><div type="button"><img src="img/my-project.png" alt="my-project">My Project</div></li>
+                    <li><div type="button"><img src="img/my-wallet.png" alt="my-wallet" >My Wallet</div></li>
+                    <li><div type="button"><img src="img/history-data.png" alt="history-data" >History Data</div></li>
+                    <li><div type="button"><img src="img/invoice.png" alt="invoice" >Invoice</div></li>
+                    <li><div type="button"><img src="img/helps.png" alt="helps" style="margin-right: 15px">Helps</div></li>
+                    <li><div class="logout" type="button"><img src="img/logout.png" alt="logout">logout</div></li>
+                </ul>
+        </nav>
+    </div>
+    <div class="container-md content">
+        <header>
+                <div class="row header" >
+                    <div class="col-md-2" type="button"><img src="img/search.png" alt="search"></div>
+                    <div class="col-md-2" type="button">
+                        <a href="#" class="notification">
+                            <div><img src="img/notification.png" alt="notification"></div>
+                            <div class="badge b-notify" >24</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2" type="button">
+                        <a href="#" class="notification">
+                            <div><img src="img/message.png" alt="message"></div>
+                            <div class="badge b-message">5</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 profile-photo"><img src="img/nick-ramil.png" alt="profile-photo"></div>
+                    <div class="col-md-2" type="button"><img src="img/arrow.png" alt="arrow"></div>
+                </div>
+                <div class="container-md head-line"></div>
+            </header>
+        <div class="row body1">
+                <div class="col-md-3 credit-card"><p class="mini-titles">My Credit Card</p>
+                    <div class="container-md card"><img src="img/visa.png" alt="visa">
+                        <div class="card-body">
+                            <p class="card-title">VISA</p>
+                            <p class="card-subtitle mb-2">2450 &nbsp; &nbsp;24512 &nbsp; &nbsp;25412</p>
+                            <p class="card-text date-account">12/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUBASH</p>
+                        </div>
+                    </div>
+                    <div class="container-md card-line"></div>
+                    <div class="row card-info">
+                        <div class="col-md-6">
+                            <div class="row names">
+                                <div class="col-md-12">Card number:</div>
+                                <div class="col-md-12">Account Name:</div>
+                                <div class="col-md-12">Card status:</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">2450 24512 25412</div>
+                                <div class="col-md-12">Subash Chandra</div>
+                                <div class="col-md-12">Active</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 statistics"><p class="mini-titles">Statistics</p>
+                </div>
+            </div>
+        <div class="row body2">
+                <div class="col-md-3 month-earning"><p class="mini-titles">Earning in Month</p>
+                    <div class="percent">
+                        <svg>
+                            <circle class="circle-bg"  cx = "60" cy="60" r="60"></circle>
+                            <circle class="circle-1" cx = "60" cy="60" r="60"></circle>
+                            <circle class="circle-2" cx = "60" cy="60" r="60"></circle>
+                            <circle class="circle-3" cx = "60" cy="60" r="60"></circle>
+                        </svg>
+                        <div class="per-number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <div class="container-md card-line"></div>
+                    <div class="row card-info">
+                        <div class="col-md-6">
+                            <div class="row names">
+                                <div class="col-md-12">Deposit:</div>
+                                <div class="col-md-12">Expese:</div>
+                                <div class="col-md-12">payable:</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">$20 541 875 574</div>
+                                <div class="col-md-12">$541 875 574</div>
+                                <div class="col-md-12">$805 875 574</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 sales" >
+                    <div class="row">
+                        <div class="col-md-12 monthly-sales"><p class="mini-titles">Monthly Sale</p>
+                            <div class="income">
+                                <h6>20 541</h6>
+                                <p>Today Income</p>
+                                <div class="container-md">
+                                    <img src="img/down-arrow.png" alt="down-arrow">
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="per-position">
+                                <div>65%</div>
+                                <div class="box"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 early-sales"><p class="mini-titles">Early Sale</p>
+                            <div class="income">
+                                <h6>20 54 125</h6>
+                                <p>Today Income</p>
+                                <div class="container-md">
+                                    <img src="img/up-arrow.png" alt="up-arrow">
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="per-position">
+                                <div>75%</div>
+                                <div class="box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cal">
+                    <div class="container">
+                        <div class="calendar">
+                            <div class="cal-title">
+                                <div class="container cal-icon"><img src="img/calendar.png" alt="calendar-icon"></div>
+                                <p>Calendar</p>
+                                <p class="current-date">March 27, 2020</p>
+                                <div class="points">
+                                    <div class="row r-points">
+                                        <div class="col-md-12">.</div>
+                                        <div class="col-md-12">.</div>
+                                        <div class="col-md-12">.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="month">
+                                <i class="fas fa-angle-left prev"></i>
+                                <div class="date">
+                                    <h6>March</h6>
+                                </div>
+                                <i class="fas fa-angle-right next"></i>
+                            </div>
+                            <div class="weekdays">
+                                            <div>Sun</div>
+                                            <div>Mon</div>
+                                            <div>Tue</div>
+                                            <div>Wed</div>
+                                            <div>Thu</div>
+                                            <div>Fri</div>
+                                            <div>Sat</div>
+                                    </div>
+                            <div class="days">
+                                            <div class="prev-date">26</div>
+                                            <div class="prev-date">27</div>
+                                            <div class="prev-date">28</div>
+                                            <div class="prev-date">29</div>
+                                            <div class="prev-date">30</div>
+                                            <div>1</div>
+                                            <div>2</div>
+                                            <div>3</div>
+                                            <div>4</div>
+                                            <div>5</div>
+                                            <div>6</div>
+                                            <div>7</div>
+                                            <div>8</div>
+                                            <div>9</div>
+                                            <div>10</div>
+                                            <div>11</div>
+                                            <div class="day1">12</div>
+                                            <div>13</div>
+                                            <div>14</div>
+                                            <div>15</div>
+                                            <div>16</div>
+                                            <div>17</div>
+                                            <div class="day2">18</div>
+                                            <div>19</div>
+                                            <div>20</div>
+                                            <div>21</div>
+                                            <div>22</div>
+                                            <div>23</div>
+                                            <div>24</div>
+                                            <div>25</div>
+                                            <div>26</div>
+                                            <div>27</div>
+                                            <div class="day3">28</div>
+                                            <div>29</div>
+                                            <div>30</div>
+                                            <div>31</div>
+                                            <div class="next-date">1</div>
+                                            <div class="next-date">2</div>
+                                            <div class="next-date">3</div>
+                                            <div class="next-date">4</div>
+                                            <div class="next-date">5</div>
+                                            <div class="next-date">6</div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
 </body>
 </html>

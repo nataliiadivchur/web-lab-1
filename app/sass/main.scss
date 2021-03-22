@@ -1,0 +1,483 @@
+$bgColor1: rgba(255, 255, 255, 0.5);
+$bgColor2: rgba(255, 255, 255, 0.8);
+$myOrange: #ffb767;
+$myGray:#b1b5b8;
+$fontColor: #1a1e21;
+$myFont: poopins;
+.card-info{
+  font-size: 12px;
+  line-height: 30px;
+  .names{
+    color:#b1b5b8;
+  }
+}
+.card-line{
+  background-color:#e4d6d5;
+  height: 1px;
+  width: 225px;
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+.mini-titles{
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 16px;
+}
+body {
+  color: $fontColor;
+  font{
+    font-family: $myFont;
+  };
+  background-image: url(../img/full.png);
+}
+.wrapper {
+  width: 200px;
+  margin-top: 150px;
+  margin-left: 230px;
+  background-color: $bgColor1;
+  opacity: 90%;
+  height: 900px;
+  nav {
+    .sidebar-header {
+      margin-top: 15px;
+      margin-left: 30px;
+      font-size: 20px;
+      color: $fontColor;
+      text-align: justify-all;
+      img {
+        margin-top: 25px;
+      }
+      div {
+        margin-left: 30px;
+        margin-top: -25px;
+      }
+    }
+    ul {
+      .active{
+        color: $myOrange;
+        &:hover{ img {filter: hue-rotate(0deg)}}
+      }
+      list-style: none;
+      margin-top: 45px;
+      line-height: 2.667;
+      text-align: left;
+      color: $fontColor;
+      li img {
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+      li div {
+        &:hover {
+          color: $myOrange;
+          img {
+            filter: saturate(100)
+            hue-rotate(190deg)
+            brightness(1.5);
+          }
+        }
+      }
+      .logout {
+        margin-top: 430px;
+        &:hover {color: RGBA(224, 0, 0, 0.68);}
+        &:active {color: RGBA(224, 0, 0, 0.68);}
+      }
+    }
+  }
+}
+.content{
+  background-color: $bgColor2;
+  height: 900px;
+  width: 812px;
+  margin-top: -900px;
+  margin-bottom: 150px;
+  margin-left: 430px;
+  position: relative;
+  color: $fontColor;
+  header{
+   .header{
+     margin-left: 540px;
+     margin-top: -60px;
+     color: #5c636a;
+     width: 250px;
+     .col-md-2{
+       width: 50px;
+       margin-top: 20px;
+       .notification{
+          div{
+            margin-bottom: -38px
+          }
+         .b-notify{
+           color: #5c636a;
+           opacity: 0.5;
+           margin-left: 5px
+         }
+         .b-message{
+           color: #5c636a;
+           opacity: 0.5;
+           margin-left: 10px
+         }
+       }
+     }
+     .profile-photo{
+       width: 20px;
+       margin-right: 23px;
+       margin-top: 15px;
+     }
+   }
+ }
+  .head-line{
+    height: 0.5px;
+    width: 812px;
+    background-color:#e4d6d5;
+    margin-top: 20px;
+    margin-left: -12px
+  }
+  .body1{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255,0.4);
+    .credit-card{
+      border-radius: 3px;
+      box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+      height: 350px;
+      width: 250px;
+      margin-right: 20px;
+      .card{
+        width: 225px;
+        height: 120px;
+        margin-top: 25px;
+        background-image: url(../img/card-bg.png);
+        box-shadow:  0 13px 30px 0 rgba(72, 117, 174, 0.25);
+        img{
+          margin-top: 35px
+        }
+        .card-body{
+          margin-top: -85px;
+          .card-title{
+            height: 15px;
+            margin-left: -30px;
+            margin-top: -10px;
+            border-radius: 3px;
+            background-color: white;
+            width: 35px;
+            text-align: center;
+            font-size: 10px;
+            font-style: italic;
+          }
+          .card-subtitle{
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+            font-size: 16px;
+            width: 180px;
+            margin-left: -20px
+          }
+          .date-account{
+            width: 180px;
+            text-align: center;
+            margin-left: -20px;
+            font-size: 13px;
+            color: white;
+          }
+
+        }
+      }
+    }
+    .statistics{
+      border-radius: 3px;
+      box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+      height: 350px;
+      width: 477px;
+    }
+  }
+  .body2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    .col-md-3 {
+      height: 350px;
+    }
+    .month-earning {
+      border-radius: 3px;
+      box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+      height: 350px;
+      width: 250px;
+      margin-right: 20px;
+
+      .percent {
+        margin-top: 25px;
+        margin-bottom: 75px;
+        svg {
+          margin-left: 30px;
+          stroke-dasharray: 440;
+          stroke-linecap: round;
+          .circle-bg {
+            fill: none;
+            stroke-width: 10;
+            stroke: #f3f3f3;
+            stroke-dashoffset: 0;
+            transform: translate(5px, 5px)
+          }
+          .circle-1 {
+            fill: none;
+            stroke-width: 10;
+            stroke:  #ffb767;
+            stroke-dashoffset: calc(440 - (440 * 75) / 100);
+            transform: translate(5px, 5px)
+          }
+          .circle-2 {
+            fill: none;
+            stroke-width: 10;
+            stroke: #58deb6;
+            stroke-dashoffset: calc(440 - (440 * 45) / 100);
+            transform: translate(5px, 5px)
+          }
+          .circle-3 {
+            fill: none;
+            stroke-width: 10;
+            stroke:   #62a7ff;
+            stroke-dashoffset: calc(440 - (440 * 25) / 100);
+            transform: translate(5px, 5px)
+          }
+        }
+        .per-number {
+          margin-top: -100px;
+          margin-left: 75px;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            font-size: 24px;
+
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sales {
+      margin-right: 20px;
+      width: 228px;
+      .income {
+        margin-bottom: -108px;
+        margin-top: 50px;
+        h6 {
+          font-size: 25px;
+          line-height: 10px
+        }
+        p {
+          color: $myGray;
+          font-size: 12px;
+          line-height: 20px
+        }
+        div {
+          width: 70px;
+          height: 50px;
+          border-radius: 3px;
+
+          margin-bottom: -100px;
+          margin-top: -65px;
+          margin-right: 5px;
+
+          img {
+            margin-top: 10px;
+            margin-left: 2px;
+          }
+        }
+      }
+      .monthly-sales {
+        border-radius: 3px;
+        box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+        margin-bottom: 15px;
+        height: 167px;
+        .income {
+          div {
+            background-color: #ffb767;
+          }
+        }
+        .progress {
+          height: 3px;
+          width: 230px;
+          margin-top: 160px;
+          margin-left: -13px;
+          .progress-bar {
+            width: 65%;
+            background-color: #ffb767
+          }
+        }
+        .per-position {
+          margin-top: -28px;
+          margin-left: 135px;
+          div {
+            color: #ffb767;
+          }
+          .box {
+            border-radius: 50px;
+            background-color: #ffb767;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+      .early-sales {
+        border-radius: 3px;
+        box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+        height: 167px;
+        .income {
+          div {
+            background-color: #18bb4b;
+          }
+        }
+        .progress {
+          height: 3px;
+          width: 230px;
+          margin-top: 160px;
+          margin-left: -13px;
+          .progress-bar {
+            width: 75%;
+            background-color: #18bb4b
+          }
+        }
+        .per-position {
+          margin-top: -28px;
+          margin-left: 155px;
+          div {
+            color: #18bb4b
+          }
+          .box {
+            border-radius: 50px;
+            background-color: #18bb4b;
+            height: 5px;
+            width: 5px
+          }
+        }
+      }
+    }
+    .cal{
+      border-radius: 3px;
+      box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+      width: 229px;
+      height: 350px;
+      .calendar {
+        width: 12rem;
+        height: 18rem;
+        margin-left: -20px;
+        margin-top: 10px;
+        align-items: center;
+        color: $myGray;
+        .cal-title {
+          color: $fontColor;
+          margin-left: 60px;
+          margin-top:-50px;
+          margin-bottom: 45px;
+          .cal-icon {
+            border-radius: 3px;
+            background-color: #62a7ff;
+            width: 50px;
+            height: 50px;
+            margin-left: -60px;
+            margin-top: 70px;
+            margin-bottom: -50px;
+            img {
+              margin-top: 12px;
+              margin-left: -10px;
+            }
+          }
+          .current-date {
+            font-size: 12px;
+            margin-top: -15px;
+            color: $myGray;
+          }
+          .points {
+            color: $myGray;
+            cursor: pointer;
+            .r-points {
+              line-height: 8px;
+              font-size: 30px;
+              margin-left: 110px;
+              margin-top: -60px;
+            }
+          }
+        }
+        .month {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          font-size: 23px;
+          margin-bottom: 10px;
+          i {
+            &:hover{
+              color: $myOrange;
+            }
+            font-size: 1rem;
+            cursor: pointer;
+          }
+        }
+        .weekdays {
+          width: 100%;
+          height: 1.3rem;
+          padding: 0 0.1rem;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          div {
+            font-size: 11px;
+            font-weight: 300;
+            letter-spacing: 0.05rem;
+            width: calc(14rem / 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .days {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0.05rem;
+          margin-left: 4px;
+
+          div {
+            font-size: 12px;
+            margin: 0.1rem;
+            width: calc(10rem / 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+          }
+        }
+        .prev-date {
+          opacity: 0.01;
+        }
+        .next-date {
+          opacity: 0.01;
+        }
+        .day1 {
+          border-radius: 50%;
+          background-color: #ffb767;
+          color: white;
+        }
+        .day2 {
+          border-radius: 50%;
+          background-color: #62a7ff;
+          color: white;
+        }
+        .day3 {
+          border-radius: 50%;
+          background-color: #58deb6;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+

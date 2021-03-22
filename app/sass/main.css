@@ -1,0 +1,467 @@
+.card-info {
+  font-size: 12px;
+  line-height: 30px;
+}
+.card-info .names {
+  color: #b1b5b8;
+}
+
+.card-line {
+  background-color: #e4d6d5;
+  height: 1px;
+  width: 225px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.mini-titles {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 16px;
+}
+
+body {
+  color: #1a1e21;
+  background-image: url(../img/full.png);
+}
+body font {
+  font-family: poopins;
+}
+
+.wrapper {
+  width: 200px;
+  margin-top: 150px;
+  margin-left: 230px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 90%;
+  height: 900px;
+}
+.wrapper nav .sidebar-header {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #1a1e21;
+  text-align: justify-all;
+}
+.wrapper nav .sidebar-header img {
+  margin-top: 25px;
+}
+.wrapper nav .sidebar-header div {
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.wrapper nav ul {
+  list-style: none;
+  margin-top: 45px;
+  line-height: 2.667;
+  text-align: left;
+  color: #1a1e21;
+}
+.wrapper nav ul .active {
+  color: #ffb767;
+}
+.wrapper nav ul .active:hover img {
+  filter: hue-rotate(0deg);
+}
+.wrapper nav ul li img {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.wrapper nav ul li div:hover {
+  color: #ffb767;
+}
+.wrapper nav ul li div:hover img {
+  filter: saturate(100) hue-rotate(190deg) brightness(1.5);
+}
+.wrapper nav ul .logout {
+  margin-top: 430px;
+}
+.wrapper nav ul .logout:hover {
+  color: RGBA(224, 0, 0, 0.68);
+}
+.wrapper nav ul .logout:active {
+  color: RGBA(224, 0, 0, 0.68);
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 900px;
+  width: 812px;
+  margin-top: -900px;
+  margin-bottom: 150px;
+  margin-left: 430px;
+  position: relative;
+  color: #1a1e21;
+}
+.content header .header {
+  margin-left: 540px;
+  margin-top: -60px;
+  color: #5c636a;
+  width: 250px;
+}
+.content header .header .col-md-2 {
+  width: 50px;
+  margin-top: 20px;
+}
+.content header .header .col-md-2 .notification div {
+  margin-bottom: -38px;
+}
+.content header .header .col-md-2 .notification .b-notify {
+  color: #5c636a;
+  opacity: 0.5;
+  margin-left: 5px;
+}
+.content header .header .col-md-2 .notification .b-message {
+  color: #5c636a;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+.content header .header .profile-photo {
+  width: 20px;
+  margin-right: 23px;
+  margin-top: 15px;
+}
+.content .head-line {
+  height: 0.5px;
+  width: 812px;
+  background-color: #e4d6d5;
+  margin-top: 20px;
+  margin-left: -12px;
+}
+.content .body1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.content .body1 .credit-card {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  height: 350px;
+  width: 250px;
+  margin-right: 20px;
+}
+.content .body1 .credit-card .card {
+  width: 225px;
+  height: 120px;
+  margin-top: 25px;
+  background-image: url(../img/card-bg.png);
+  box-shadow: 0 13px 30px 0 rgba(72, 117, 174, 0.25);
+}
+.content .body1 .credit-card .card img {
+  margin-top: 35px;
+}
+.content .body1 .credit-card .card .card-body {
+  margin-top: -85px;
+}
+.content .body1 .credit-card .card .card-body .card-title {
+  height: 15px;
+  margin-left: -30px;
+  margin-top: -10px;
+  border-radius: 3px;
+  background-color: white;
+  width: 35px;
+  text-align: center;
+  font-size: 10px;
+  font-style: italic;
+}
+.content .body1 .credit-card .card .card-body .card-subtitle {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  width: 180px;
+  margin-left: -20px;
+}
+.content .body1 .credit-card .card .card-body .date-account {
+  width: 180px;
+  text-align: center;
+  margin-left: -20px;
+  font-size: 13px;
+  color: white;
+}
+.content .body1 .statistics {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  height: 350px;
+  width: 477px;
+}
+.content .body2 {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.content .body2 .col-md-3 {
+  height: 350px;
+}
+.content .body2 .month-earning {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  height: 350px;
+  width: 250px;
+  margin-right: 20px;
+}
+.content .body2 .month-earning .percent {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+.content .body2 .month-earning .percent svg {
+  margin-left: 30px;
+  stroke-dasharray: 440;
+  stroke-linecap: round;
+}
+.content .body2 .month-earning .percent svg .circle-bg {
+  fill: none;
+  stroke-width: 10;
+  stroke: #f3f3f3;
+  stroke-dashoffset: 0;
+  transform: translate(5px, 5px);
+}
+.content .body2 .month-earning .percent svg .circle-1 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #ffb767;
+  stroke-dashoffset: calc(440 - (440 * 75) / 100);
+  transform: translate(5px, 5px);
+}
+.content .body2 .month-earning .percent svg .circle-2 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #58deb6;
+  stroke-dashoffset: calc(440 - (440 * 45) / 100);
+  transform: translate(5px, 5px);
+}
+.content .body2 .month-earning .percent svg .circle-3 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #62a7ff;
+  stroke-dashoffset: calc(440 - (440 * 25) / 100);
+  transform: translate(5px, 5px);
+}
+.content .body2 .month-earning .percent .per-number {
+  margin-top: -100px;
+  margin-left: 75px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content .body2 .month-earning .percent .per-number h2 {
+  font-size: 24px;
+}
+.content .body2 .month-earning .percent .per-number h2 span {
+  font-size: 20px;
+}
+.content .body2 .sales {
+  margin-right: 20px;
+  width: 228px;
+}
+.content .body2 .sales .income {
+  margin-bottom: -108px;
+  margin-top: 50px;
+}
+.content .body2 .sales .income h6 {
+  font-size: 25px;
+  line-height: 10px;
+}
+.content .body2 .sales .income p {
+  color: #b1b5b8;
+  font-size: 12px;
+  line-height: 20px;
+}
+.content .body2 .sales .income div {
+  width: 70px;
+  height: 50px;
+  border-radius: 3px;
+  margin-bottom: -100px;
+  margin-top: -65px;
+  margin-right: 5px;
+}
+.content .body2 .sales .income div img {
+  margin-top: 10px;
+  margin-left: 2px;
+}
+.content .body2 .sales .monthly-sales {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  margin-bottom: 15px;
+  height: 167px;
+}
+.content .body2 .sales .monthly-sales .income div {
+  background-color: #ffb767;
+}
+.content .body2 .sales .monthly-sales .progress {
+  height: 3px;
+  width: 230px;
+  margin-top: 160px;
+  margin-left: -13px;
+}
+.content .body2 .sales .monthly-sales .progress .progress-bar {
+  width: 65%;
+  background-color: #ffb767;
+}
+.content .body2 .sales .monthly-sales .per-position {
+  margin-top: -28px;
+  margin-left: 135px;
+}
+.content .body2 .sales .monthly-sales .per-position div {
+  color: #ffb767;
+}
+.content .body2 .sales .monthly-sales .per-position .box {
+  border-radius: 50px;
+  background-color: #ffb767;
+  height: 5px;
+  width: 5px;
+}
+.content .body2 .sales .early-sales {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  height: 167px;
+}
+.content .body2 .sales .early-sales .income div {
+  background-color: #18bb4b;
+}
+.content .body2 .sales .early-sales .progress {
+  height: 3px;
+  width: 230px;
+  margin-top: 160px;
+  margin-left: -13px;
+}
+.content .body2 .sales .early-sales .progress .progress-bar {
+  width: 75%;
+  background-color: #18bb4b;
+}
+.content .body2 .sales .early-sales .per-position {
+  margin-top: -28px;
+  margin-left: 155px;
+}
+.content .body2 .sales .early-sales .per-position div {
+  color: #18bb4b;
+}
+.content .body2 .sales .early-sales .per-position .box {
+  border-radius: 50px;
+  background-color: #18bb4b;
+  height: 5px;
+  width: 5px;
+}
+.content .body2 .cal {
+  border-radius: 3px;
+  box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
+  width: 229px;
+  height: 350px;
+}
+.content .body2 .cal .calendar {
+  width: 12rem;
+  height: 18rem;
+  margin-left: -20px;
+  margin-top: 10px;
+  align-items: center;
+  color: #b1b5b8;
+}
+.content .body2 .cal .calendar .cal-title {
+  color: #1a1e21;
+  margin-left: 60px;
+  margin-top: -50px;
+  margin-bottom: 45px;
+}
+.content .body2 .cal .calendar .cal-title .cal-icon {
+  border-radius: 3px;
+  background-color: #62a7ff;
+  width: 50px;
+  height: 50px;
+  margin-left: -60px;
+  margin-top: 70px;
+  margin-bottom: -50px;
+}
+.content .body2 .cal .calendar .cal-title .cal-icon img {
+  margin-top: 12px;
+  margin-left: -10px;
+}
+.content .body2 .cal .calendar .cal-title .current-date {
+  font-size: 12px;
+  margin-top: -15px;
+  color: #b1b5b8;
+}
+.content .body2 .cal .calendar .cal-title .points {
+  color: #b1b5b8;
+  cursor: pointer;
+}
+.content .body2 .cal .calendar .cal-title .points .r-points {
+  line-height: 8px;
+  font-size: 30px;
+  margin-left: 110px;
+  margin-top: -60px;
+}
+.content .body2 .cal .calendar .month {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.content .body2 .cal .calendar .month i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.content .body2 .cal .calendar .month i:hover {
+  color: #ffb767;
+}
+.content .body2 .cal .calendar .weekdays {
+  width: 100%;
+  height: 1.3rem;
+  padding: 0 0.1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content .body2 .cal .calendar .weekdays div {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  width: calc(14rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .body2 .cal .calendar .days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.05rem;
+  margin-left: 4px;
+}
+.content .body2 .cal .calendar .days div {
+  font-size: 12px;
+  margin: 0.1rem;
+  width: calc(10rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content .body2 .cal .calendar .prev-date {
+  opacity: 0.01;
+}
+.content .body2 .cal .calendar .next-date {
+  opacity: 0.01;
+}
+.content .body2 .cal .calendar .day1 {
+  border-radius: 50%;
+  background-color: #ffb767;
+  color: white;
+}
+.content .body2 .cal .calendar .day2 {
+  border-radius: 50%;
+  background-color: #62a7ff;
+  color: white;
+}
+.content .body2 .cal .calendar .day3 {
+  border-radius: 50%;
+  background-color: #58deb6;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

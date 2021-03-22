@@ -16,6 +16,11 @@
     "gulp-git": "^2.10.1",
     "gulp-svn": "^1.0.8",
     "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "node-sass": "^5.0.0"
   }
 }
