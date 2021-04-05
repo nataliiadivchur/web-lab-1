@@ -82,6 +82,10 @@ body font {
 .wrapper nav ul .logout:active {
   color: RGBA(224, 0, 0, 0.68);
 }
+.wrapper nav ul .logout p {
+  margin-left: 55px;
+  margin-top: -42px;
+}
 
 .content {
   background-color: rgba(255, 255, 255, 0.8);
@@ -120,6 +124,34 @@ body font {
   width: 20px;
   margin-right: 23px;
   margin-top: 15px;
+}
+.content header .header .profile-dropdown i {
+  color: #b1b5b8;
+  cursor: pointer;
+}
+.content header .header .profile-dropdown i:hover {
+  color: #ffb767;
+}
+.content header .header .profile-dropdown i:active {
+  color: #ffb767;
+}
+.content header .header .profile-dropdown .arrow-button {
+  margin-left: 10px;
+}
+.content header .header .profile-dropdown .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 90%;
+}
+.content header .header .profile-dropdown .dropdown-menu .dropdown-item {
+  color: #1a1e21;
+}
+.content header .header .profile-dropdown .dropdown-menu .dropdown-item:active {
+  color: #ffb767;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.content header .header .profile-dropdown .dropdown-menu .dropdown-item:hover {
+  color: #ffb767;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .content .head-line {
   height: 0.5px;
@@ -186,6 +218,22 @@ body font {
   height: 350px;
   width: 477px;
 }
+.content .body1 .statistics div {
+  margin-top: -30px;
+}
+.content .body1 .statistics div .form-select {
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+.content .body1 .statistics div .form-1 {
+  width: 90px;
+  margin-left: 220px;
+}
+.content .body1 .statistics div .form-2 {
+  width: 100px;
+  margin-left: 350px;
+  margin-top: -40px;
+}
 .content .body2 {
   margin-top: 30px;
   margin-left: 20px;
@@ -203,6 +251,7 @@ body font {
   margin-right: 20px;
 }
 .content .body2 .month-earning .percent {
+  margin-left: 20px;
   margin-top: 25px;
   margin-bottom: 75px;
 }
@@ -443,22 +492,12 @@ body font {
   margin-bottom: 10px;
 }
 .content .body2 .cal .calendar .prev-date {
-  opacity: 0.01;
+  opacity: 0.5;
 }
 .content .body2 .cal .calendar .next-date {
-  opacity: 0.01;
+  opacity: 0.5;
 }
-.content .body2 .cal .calendar .day1 {
-  border-radius: 50%;
-  background-color: #ffb767;
-  color: white;
-}
-.content .body2 .cal .calendar .day2 {
-  border-radius: 50%;
-  background-color: #62a7ff;
-  color: white;
-}
-.content .body2 .cal .calendar .day3 {
+.content .body2 .cal .calendar .today {
   border-radius: 50%;
   background-color: #58deb6;
   color: white;

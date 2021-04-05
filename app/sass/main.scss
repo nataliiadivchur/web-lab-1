@@ -8,7 +8,7 @@ $myFont: poopins;
   font-size: 12px;
   line-height: 30px;
   .names{
-    color:#b1b5b8;
+    color:$myGray;
   }
 }
 .card-line{
@@ -79,7 +79,11 @@ body {
       .logout {
         margin-top: 430px;
         &:hover {color: RGBA(224, 0, 0, 0.68);}
-        &:active {color: RGBA(224, 0, 0, 0.68);}
+        &:active {color: RGBA(224, 0, 0, 0.68);};
+          p{
+          margin-left: 55px;
+            margin-top: -42px;
+         }
       }
     }
   }
@@ -122,6 +126,36 @@ body {
        width: 20px;
        margin-right: 23px;
        margin-top: 15px;
+     }
+     .profile-dropdown{
+       i{
+         color: $myGray;
+         &:hover{
+           color: $myOrange;
+         }
+         &:active{
+           color: $myOrange;
+         }
+         cursor: pointer;
+       }
+       .arrow-button{
+         margin-left: 10px;
+       }
+       .dropdown-menu{
+         background-color: $bgColor2;
+          opacity: 90%;
+          .dropdown-item{
+            color: $fontColor;
+            &:active{
+              color: $myOrange;
+              background-color: $bgColor2;
+            }
+            &:hover{
+              color: $myOrange;
+              background-color: $bgColor2;
+            }
+          }
+       }
      }
    }
  }
@@ -189,6 +223,27 @@ body {
       box-shadow: 0 0 120px 0 rgba(31, 32, 41, 0.1);
       height: 350px;
       width: 477px;
+      div{
+        margin-top: -30px;
+
+        .form-select{
+          border-color: rgba(255, 255, 255,0);
+          background-color: rgba(255, 255, 255,0);
+
+        }
+        .form-1{
+          width: 90px;
+          margin-left: 220px;
+
+        }
+        .form-2{
+          width: 100px;
+          margin-left: 350px;
+          margin-top: -40px;
+
+        }
+      }
+
     }
   }
   .body2 {
@@ -207,6 +262,7 @@ body {
       margin-right: 20px;
 
       .percent {
+        margin-left: 20px;
         margin-top: 25px;
         margin-bottom: 75px;
         svg {
@@ -454,30 +510,21 @@ body {
             margin-bottom: 10px;
           }
         }
-        .prev-date {
-          opacity: 0.01;
-        }
-        .next-date {
-          opacity: 0.01;
-        }
-        .day1 {
-          border-radius: 50%;
-          background-color: #ffb767;
-          color: white;
-        }
-        .day2 {
-          border-radius: 50%;
-          background-color: #62a7ff;
-          color: white;
-        }
-        .day3 {
-          border-radius: 50%;
-          background-color: #58deb6;
-          color: white;
-        }
+          .prev-date {
+            opacity: 0.5;
+          }
+
+          .next-date {
+            opacity: 0.5;
+          }
+
+          .today {
+            border-radius: 50%;
+            background-color: #58deb6;
+            color: white;
+          }
+
       }
     }
   }
 }
-
-

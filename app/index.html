@@ -9,7 +9,10 @@
     <link rel="icon" href="img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="sass/main.css">
-    <script src="js/app.min.js"></script>
+    <!-- for apexcharts-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- for chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <!-- for calendar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
@@ -28,7 +31,7 @@
                     <li><div type="button"><img src="img/history-data.png" alt="history-data" >History Data</div></li>
                     <li><div type="button"><img src="img/invoice.png" alt="invoice" >Invoice</div></li>
                     <li><div type="button"><img src="img/helps.png" alt="helps" style="margin-right: 15px">Helps</div></li>
-                    <li><div class="logout" type="button"><img src="img/logout.png" alt="logout">logout</div></li>
+                    <li class="logout"><img src="img/logout.png" alt="logout"><p class="logout-text" type="button">logout</P></li>
                 </ul>
         </nav>
     </div>
@@ -48,8 +51,17 @@
                             <div class="badge b-message">5</div>
                         </a>
                     </div>
-                    <div class="col-md-2 profile-photo"><img src="img/nick-ramil.png" alt="profile-photo"></div>
-                    <div class="col-md-2" type="button"><img src="img/arrow.png" alt="arrow"></div>
+                    <div class="col-md-2 profile-photo" type="button"><img src="img/nick-ramil.png" alt="search"></div>
+                    <div class="col-md-2 dropdown profile-dropdown" style="margin-left: -7px;">
+                        <div class="arrow-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="container-md head-line"></div>
             </header>
@@ -81,6 +93,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 statistics"><p class="mini-titles">Statistics</p>
+                    <div>
+                    <select class="form-select form-1" id="years" aria-label="Default select example" onchange="updateChart1(this.value); ">
+                        <option selected value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                    <select class="form-select form-2" id="YearOrMonth" aria-label="Default select example" onchange="updateChart2(this.value)">
+                        <option selected value="month">Month</option>
+                        <option value="year">Year</option>
+                    </select>
+                    </div>
+                   <canvas id="myChart" width="350" height="200" style="margin-top: 25px;"></canvas>
                 </div>
             </div>
         <div class="row body2">
@@ -156,7 +181,7 @@
                             <div class="cal-title">
                                 <div class="container cal-icon"><img src="img/calendar.png" alt="calendar-icon"></div>
                                 <p>Calendar</p>
-                                <p class="current-date">March 27, 2020</p>
+                                <p class="current-date"></p>
                                 <div class="points">
                                     <div class="row r-points">
                                         <div class="col-md-12">.</div>
@@ -168,7 +193,7 @@
                             <div class="month">
                                 <i class="fas fa-angle-left prev"></i>
                                 <div class="date">
-                                    <h6>March</h6>
+                                    <h6></h6>
                                 </div>
                                 <i class="fas fa-angle-right next"></i>
                             </div>
@@ -181,54 +206,13 @@
                                             <div>Fri</div>
                                             <div>Sat</div>
                                     </div>
-                            <div class="days">
-                                            <div class="prev-date">26</div>
-                                            <div class="prev-date">27</div>
-                                            <div class="prev-date">28</div>
-                                            <div class="prev-date">29</div>
-                                            <div class="prev-date">30</div>
-                                            <div>1</div>
-                                            <div>2</div>
-                                            <div>3</div>
-                                            <div>4</div>
-                                            <div>5</div>
-                                            <div>6</div>
-                                            <div>7</div>
-                                            <div>8</div>
-                                            <div>9</div>
-                                            <div>10</div>
-                                            <div>11</div>
-                                            <div class="day1">12</div>
-                                            <div>13</div>
-                                            <div>14</div>
-                                            <div>15</div>
-                                            <div>16</div>
-                                            <div>17</div>
-                                            <div class="day2">18</div>
-                                            <div>19</div>
-                                            <div>20</div>
-                                            <div>21</div>
-                                            <div>22</div>
-                                            <div>23</div>
-                                            <div>24</div>
-                                            <div>25</div>
-                                            <div>26</div>
-                                            <div>27</div>
-                                            <div class="day3">28</div>
-                                            <div>29</div>
-                                            <div>30</div>
-                                            <div>31</div>
-                                            <div class="next-date">1</div>
-                                            <div class="next-date">2</div>
-                                            <div class="next-date">3</div>
-                                            <div class="next-date">4</div>
-                                            <div class="next-date">5</div>
-                                            <div class="next-date">6</div>
-                                    </div>
+                            <div class="days"></div>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
+    <script src="js/app.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

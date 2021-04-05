@@ -1,0 +1,159 @@
+.mini-titles {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 16px
+}
+body {
+  color: $fontColor
+}
+div {
+  margin-left: 30px;
+  margin-top: -25px
+}
+.b-notify {
+  color: #5c636a;
+  opacity: .5;
+  margin-left: 5px
+}
+.b-message {
+  color: #5c636a;
+  opacity: .5;
+  margin-left: 10px
+}
+.body1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(255,255,255,.4);
+  -webkit-box-shadow: 0 0 120px 0 rgba(31,32,41,.1);
+  box-shadow: 0 0 120px 0 rgba(31,32,41,.1);
+  height: 350px;
+  width: 250px;
+  margin-right: 20px;
+  height: 120px;
+  margin-top: 25px;
+  background-image: url(../img/card-bg.png);
+  -webkit-box-shadow: 0 13px 30px 0 rgba(72,117,174,.25);
+  box-shadow: 0 13px 30px 0 rgba(72,117,174,.25)
+}
+.card-body {
+  margin-top: -85px;
+  margin-left: -30px;
+  margin-top: -10px;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 35px;
+  text-align: center;
+  font-size: 10px;
+  font-style: italic
+}
+.card-subtitle {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 16px;
+  width: 180px;
+  margin-left: -20px
+}
+.date-account {
+  width: 180px;
+  text-align: center;
+  margin-left: -20px;
+  font-size: 13px;
+  color: #fff
+}
+.month-earning {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 120px 0 rgba(31,32,41,.1);
+  box-shadow: 0 0 120px 0 rgba(31,32,41,.1);
+  height: 350px;
+  width: 250px;
+  margin-right: 20px;
+  margin-bottom: 75px;
+  stroke-dasharray: 440;
+  stroke-linecap: round;
+  stroke-width: 10;
+  stroke: #f3f3f3;
+  stroke-dashoffset: 0;
+  -webkit-transform: translate(5px,5px);
+  -ms-transform: translate(5px,5px);
+  transform: translate(5px,5px)
+}
+.circle-1 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #ffb767;
+  stroke-dashoffset: calc(440 - (440 * 75)/ 100);
+  -webkit-transform: translate(5px,5px);
+  -ms-transform: translate(5px,5px);
+  transform: translate(5px,5px)
+}
+.circle-2 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #58deb6;
+  stroke-dashoffset: calc(440 - (440 * 45)/ 100);
+  -webkit-transform: translate(5px,5px);
+  -ms-transform: translate(5px,5px);
+  transform: translate(5px,5px)
+}
+.circle-3 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #62a7ff;
+  stroke-dashoffset: calc(440 - (440 * 25)/ 100);
+  -webkit-transform: translate(5px,5px);
+  -ms-transform: translate(5px,5px);
+  transform: translate(5px,5px)
+}
+p {
+  color: $myGray;
+  font-size: 12px;
+  line-height: 20px
+}
+div {
+  width: 70px;
+  height: 50px;
+  border-radius: 3px;
+  margin-bottom: -100px;
+  margin-top: -65px;
+  margin-right: 5px;
+  margin-left: 2px
+}
+.box {
+  border-radius: 50px;
+  background-color: #ffb767;
+  height: 5px;
+  width: 5px
+}
+.box {
+  border-radius: 50px;
+  background-color: #18bb4b;
+  height: 5px;
+  width: 5px
+}
+.points {
+  color: $myGray;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 110px;
+  margin-top: -60px
+}
+.next-date {
+  opacity: .01
+}
+.day1 {
+  border-radius: 50%;
+  background-color: #ffb767;
+  color: #fff
+}
+.day2 {
+  border-radius: 50%;
+  background-color: #62a7ff;
+  color: #fff
+}
+.day3 {
+  border-radius: 50%;
+  background-color: #58deb6;
+  color: #fff
+}
