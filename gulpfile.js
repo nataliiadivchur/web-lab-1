@@ -5,7 +5,8 @@ const uglify       = require('gulp-uglify-es').default;
 const sass         = require('sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss     = require('gulp-clean-css');
-
+const express      = require('express');
+const  fs          = require('fs');
 function browser_sync(){ //function for connection to gulp
     browserSync.init({
         server:{baseDir:'app/'},
@@ -43,6 +44,21 @@ function start_watch(){ //function for watching & reloading
     watch('app/**/*.html').on('change', browserSync.reload)
     watch('app/sass/main.scss').on('change',browserSync.reload)
 }
+const path = require('path');
+const app = express();
+app.use(express.static(path.join(__dirname, 'app')));
+
+app.get('/', function (req, res) {
+    res.sendFile(__dirname+ '/app/index.html');
+})
+app.get('/getChartData', (req, res)=>{
+fs.readFile('data.json','utf-8',(err,data)=>{
+    console.log(data);
+    res.send(data);
+})
+})
+app.listen(3000)
+console.log('Run')
 
 exports.browser_sync = browser_sync;
 exports.scripts = scripts;

@@ -4,6 +4,7 @@ $myOrange: #ffb767;
 $myGray:#b1b5b8;
 $fontColor: #1a1e21;
 $myFont: poopins;
+
 .card-info{
   font-size: 12px;
   line-height: 30px;
@@ -279,8 +280,8 @@ body {
           .circle-1 {
             fill: none;
             stroke-width: 10;
-            stroke:  #ffb767;
-            stroke-dashoffset: calc(440 - (440 * 75) / 100);
+            stroke:  #58deb6;
+            stroke-dashoffset: calc(440 - (440 * 1) / 100);
             transform: translate(5px, 5px)
           }
           .circle-2 {
@@ -293,7 +294,7 @@ body {
           .circle-3 {
             fill: none;
             stroke-width: 10;
-            stroke:   #62a7ff;
+            stroke:  #62a7ff;
             stroke-dashoffset: calc(440 - (440 * 25) / 100);
             transform: translate(5px, 5px)
           }
@@ -307,11 +308,8 @@ body {
           align-items: center;
           h2 {
             font-size: 24px;
-
-            span {
-              font-size: 20px;
-            }
           }
+
         }
       }
     }

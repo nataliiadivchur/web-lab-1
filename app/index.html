@@ -9,6 +9,8 @@
     <link rel="icon" href="img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- for apexcharts-->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- for chart.js-->
@@ -70,8 +72,8 @@
                     <div class="container-md card"><img src="img/visa.png" alt="visa">
                         <div class="card-body">
                             <p class="card-title">VISA</p>
-                            <p class="card-subtitle mb-2">2450 &nbsp; &nbsp;24512 &nbsp; &nbsp;25412</p>
-                            <p class="card-text date-account">12/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUBASH</p>
+                            <p class="card-subtitle mb-2"></p>
+                            <p class="card-text date-account"></p>
                         </div>
                     </div>
                     <div class="container-md card-line"></div>
@@ -85,22 +87,22 @@
                         </div>
                         <div class="col-md-6">
                             <div class="row">
-                                <div class="col-md-12">2450 24512 25412</div>
-                                <div class="col-md-12">Subash Chandra</div>
-                                <div class="col-md-12">Active</div>
+                                <div class="col-md-12 cardNumber"></div>
+                                <div class="col-md-12 accountName"></div>
+                                <div class="col-md-12 cardStatus"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 statistics"><p class="mini-titles">Statistics</p>
                     <div>
-                    <select class="form-select form-1" id="years" aria-label="Default select example" onchange="updateChart1(this.value); ">
-                        <option selected value="2021">2021</option>
+                    <select class="form-select form-1" id="years" aria-label="Default select example" onchange="updateChart(this.value); ">
+                        <option value="2021">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
                     </select>
-                    <select class="form-select form-2" id="YearOrMonth" aria-label="Default select example" onchange="updateChart2(this.value)">
+                    <select class="form-select form-2" id="YearOrMonth" aria-label="Default select example" onchange="updateChart(this.value)">
                         <option selected value="month">Month</option>
                         <option value="year">Year</option>
                     </select>
@@ -113,12 +115,12 @@
                     <div class="percent">
                         <svg>
                             <circle class="circle-bg"  cx = "60" cy="60" r="60"></circle>
-                            <circle class="circle-1" cx = "60" cy="60" r="60"></circle>
-                            <circle class="circle-2" cx = "60" cy="60" r="60"></circle>
-                            <circle class="circle-3" cx = "60" cy="60" r="60"></circle>
+                            <circle id="per-circle" class="circle-1" cx = "60" cy="60" r="60"></circle>
+                        <!--    <circle class="circle-2" cx = "60" cy="60" r="60"></circle>
+                            <circle class="circle-3" cx = "60" cy="60" r="60"></circle> -->
                         </svg>
                         <div class="per-number">
-                            <h2>75<span>%</span></h2>
+                            <h2 class="percent-num"></h2>
                         </div>
                     </div>
                     <div class="container-md card-line"></div>
@@ -126,15 +128,15 @@
                         <div class="col-md-6">
                             <div class="row names">
                                 <div class="col-md-12">Deposit:</div>
-                                <div class="col-md-12">Expese:</div>
+                                <div class="col-md-12">Expense:</div>
                                 <div class="col-md-12">payable:</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="row">
-                                <div class="col-md-12">$20 541 875 574</div>
-                                <div class="col-md-12">$541 875 574</div>
-                                <div class="col-md-12">$805 875 574</div>
+                                <div class="col-md-12 deposit"></div>
+                                <div class="col-md-12 expense"></div>
+                                <div class="col-md-12 payable"></div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +145,7 @@
                     <div class="row">
                         <div class="col-md-12 monthly-sales"><p class="mini-titles">Monthly Sale</p>
                             <div class="income">
-                                <h6>20 541</h6>
+                                <h6 class="Msale"></h6>
                                 <p>Today Income</p>
                                 <div class="container-md">
                                     <img src="img/down-arrow.png" alt="down-arrow">
@@ -157,9 +159,9 @@
                                 <div class="box"></div>
                             </div>
                         </div>
-                        <div class="col-md-12 early-sales"><p class="mini-titles">Early Sale</p>
+                        <div class="col-md-12 early-sales"><p class="mini-titles">Yearly Sale</p>
                             <div class="income">
-                                <h6>20 54 125</h6>
+                                <h6 class="Ysale"></h6>
                                 <p>Today Income</p>
                                 <div class="container-md">
                                     <img src="img/up-arrow.png" alt="up-arrow">
